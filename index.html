@@ -68,7 +68,7 @@
                 Demos
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Home Default</a></li>
+                <li><a class="dropdown-item" href="#home">Home Default</a></li>
                 <li><a class="dropdown-item" href="#">Home Education</a></li>
                 <li><a class="dropdown-item" href="#">Home Academy</a></li>
                 <li><a class="dropdown-item" href="#">Home Course</a></li>
@@ -93,10 +93,10 @@
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
-                Pages
+                Courses
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Course</a></li>
+                <li><a class="dropdown-item" href="#courses">Course</a></li>
                 <li><a class="dropdown-item" href="#">About</a></li>
                 <li><a class="dropdown-item" href="#">Hero banner</a></li>
                 <li><a class="dropdown-item" href="#">Instructor List</a></li>
@@ -233,6 +233,7 @@
               type="search"
               placeholder="Search"
               aria-label="Search"
+              id="card"
             />
             <button
               class="bg-transparent p-2 position-absolute top-0 end-0 border-0"
@@ -268,7 +269,7 @@
     <!-- navbar ends here -->
 
     <!-- Main Content -->
-    <div class="container mt-5">
+    <div class="container mt-5" id="home">
       <!-- section 1 -->
       <div class="row align-items-center">
         <div class="col-lg-6 col-md-12 text-center text-lg-start">
@@ -303,31 +304,62 @@
     <!-- section 1 ends -->
 
     <!-- section 2-->
-    <section>
+    <section id="courses">
       <h1 class="display-6 fw-bold text-center mt-4">Most Popular Courses</h1>
       <p class="text-center">
         Choose from hundreds of courses from specialist organizations
       </p>
-      <div class="bg-light-primary text-center">
+      <div
+        class="bg-light-primary text-center btn-type"
+        role="group"
+        aria-label="Toggle Buttons"
+      >
         <!--bg-info opacity-25-->
         <button
           type="button"
-          class="btn bg-primary border-0 text-light active"
+          class="btn btn-outline-primary border-0 active"
           data-bs-toggle="button"
           aria-pressed="true"
+          id="btn1"
         >
           Web Design
         </button>
-        <button type="button" class="btn text-primary border-0">
+        <button
+          type="button"
+          class="btn btn-outline-primary border-0"
+          data-bs-toggle="button"
+          aria-pressed="false"
+          id="btn2"
+        >
           Development
         </button>
-        <button type="button" class="btn text-primary border-0">
+        <button
+          type="button"
+          class="btn btn-outline-primary border-0"
+          data-bs-toggle="button"
+          aria-pressed="false"
+          id="btn3"
+        >
           Graphic Design
         </button>
-        <button type="button" class="btn text-primary border-0">
+        <button
+          type="button"
+          class="btn btn-outline-primary border-0"
+          data-bs-toggle="button"
+          aria-pressed="false"
+          id="btn4"
+        >
           Marketing
         </button>
-        <button type="button" class="btn text-primary border-0">Finance</button>
+        <button
+          type="button"
+          class="btn btn-outline-primary border-0"
+          data-bs-toggle="button"
+          aria-pressed="false"
+          id="btn5"
+        >
+          Finance
+        </button>
       </div>
     </section>
 
@@ -926,8 +958,8 @@
               <!-- Title -->
               <h5 class="card-title fw-bold pb-3">
                 <a class="text-decoration-none" href="#"
-                  >Time Management Mastery: Do More,Stress Less </a
-                >
+                  >Time Management Mastery: Do More,Stress Less
+                </a>
               </h5>
               <!-- Rating -->
               <div class="d-flex justify-content-between mb-2">
@@ -1271,12 +1303,12 @@
           >
             <!-- copyright text -->
             <div class="text-body text-primary-hover">
-              Copyrights ©2024 Eduport. Build by
+              Copyrights ©2025 Eduport. Build by
               <a
                 href="https://www.webestica.com/"
                 target="_blank"
                 class="text-body"
-                >Webestica</a
+                >Alamin</a
               >
             </div>
             <!-- copyright links-->
@@ -1341,6 +1373,19 @@
         </div>
       </div>
     </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const buttons = document.querySelectorAll(".btn-type .btn");
+
+        buttons.forEach((button) => {
+          button.addEventListener("click", function () {
+            buttons.forEach((btn) => btn.classList.remove("active")); // Remove active from all
+            this.classList.add("active"); // Add active to clicked button
+          });
+        });
+      });
+    </script>
 
     <!-- Bootstrap JS -->
     <script
