@@ -8,10 +8,15 @@
   margin-right: 10px;
 }
 
+/* .navbar-toggler {
+  margin-left: 10em;
+} */
+
+
 .avatar-img {
-  display: inline-block;
+  display: inline;
   width: 40px;
-  vertical-align: middle;
+  height: 100%;
   margin-left: 0;
 }
 
@@ -19,7 +24,6 @@
     /* margin-left: 5em; */
 form {
     width: 100%;
-    
     margin-right: 1em;
 }
 .nav-item {
@@ -83,4 +87,10 @@ a:hover {
 
 /* .img {
     
+} */
+
+/* @media (min-width:500px) and (max-width:650px) {
+  .navbar-toggler {
+    margin-left: 18em;
+  }
 } */
