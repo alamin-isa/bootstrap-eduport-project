@@ -55,7 +55,13 @@ form {
 .dropdown-item:hover {
   background-color: #f8f9fa;
 }
-
+.ins-img {
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+  transition: 0.3s ease-in-out;
+}
+.ins-img:hover {
+  box-shadow: 3px 2px 15px rgba(0, 0, 0, 0.4);
+}
 
 
 /* .text-center {
