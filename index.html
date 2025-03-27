@@ -90,7 +90,7 @@
               </a>
               <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="#courses">Course</a></li>
-                <li><a class="dropdown-item" href="#web-design">About</a></li>
+                <li><a class="dropdown-item" href="#about">About</a></li>
                 <li>
                   <a class="dropdown-item" href="#development">Development</a>
                 </li>
@@ -122,7 +122,7 @@
               </a>
               <ul class="dropdown-menu">
                 <li>
-                  <a class="dropdown-item" href="#instructor-signup"
+                  <a class="dropdown-item" href="#instructors"
                     >Instructor</a
                   >
                 </li>
@@ -227,6 +227,7 @@
             <ul
               class="dropdown-menu dropdown-menu-end"
               aria-labelledby="userDropdown"
+              id="admin"
             >
               <li><h6 class="dropdown-header">Welcome, User!</h6></li>
               <li><hr class="dropdown-divider" /></li>
@@ -398,9 +399,9 @@
     </section>
 
     <!-- cards start here -->
-    <div class="container">
+    <div class="container" id="development">
       <div class="row g-4 mt-3">
-        <div class="mt-4 col-md-6 col-lg-4 col-xl-3">
+        <div class="mt-4 col-md-6 col-lg-4 col-xl-3" >
           <div class="card h-100 shadow-sm">
             <img
               src="./images/08.jpg"
@@ -471,7 +472,7 @@
           </div>
         </div>
 
-        <div class="mt-4 col-md-6 col-lg-4 col-xl-3">
+        <div class="mt-4 col-md-6 col-lg-4 col-xl-3" >
           <div class="card h-100 shadow-sm">
             <img
               src="./images/07.jpg"
@@ -541,7 +542,7 @@
             </div>
           </div>
         </div>
-        <div class="mt-4 col-md-6 col-lg-4 col-xl-3">
+        <div class="mt-4 col-md-6 col-lg-4 col-xl-3" >
           <div class="card h-100 shadow-sm">
             <img
               src="./images/02.jpg"
@@ -611,7 +612,7 @@
             </div>
           </div>
         </div>
-        <div class="mt-4 col-md-6 col-lg-4 col-xl-3">
+        <div class="mt-4 col-md-6 col-lg-4 col-xl-3" >
           <div class="card h-100 shadow-sm">
             <img
               src="./images/03.jpg"
@@ -678,8 +679,8 @@
             </div>
           </div>
         </div>
-        <div class="mt-4 col-md-6 col-lg-4 col-xl-3">
-          <div class="card h-100 shadow-sm">
+        <div class="mt-4 col-md-6 col-lg-4 col-xl-3" >
+         <div class="card h-100 shadow-sm">
             <img
               src="./images/09.jpg"
               class="card-image-top rounded-top"
@@ -961,7 +962,7 @@
     </div>
     <!-- cards ends here -->
 
-    <section id="instructor" class="mt-5 py-5 bg-primary text-white">
+    <section id="instructors" class="mt-5 py-5 bg-primary text-white">
       <div class="container">
         <div class="row align-items-center">
           <div class="col-lg-8">
@@ -971,7 +972,7 @@
               money teaching what you love. Join our community of 10,000+
               instructors.
             </p>
-            <a href="#become-instructor" class="btn btn-light btn-lg me-3"
+            <a href="#form" class="btn btn-light btn-lg me-3"
               >Start Teaching</a
             >
             <a href="#learn-more" class="btn btn-outline-light btn-lg"
@@ -1555,11 +1556,13 @@
             class="carousel-control-prev"
             type="button"
             data-bs-target="#courseCarousel"
-            data-bs-slide="prev"
+            data-bs-slide="prev"            
           >
             <span
-              class="carousel-control-prev-icon bg-primary rounded-circle p-3"
+              class="carousel-control-prev-icon bg-dark rounded-circle p-3"
               aria-hidden="true"
+              style="height: 40px;
+              width: 40px;"
             ></span>
             <span class="visually-hidden">Previous</span>
           </button>
@@ -1567,11 +1570,13 @@
             class="carousel-control-next"
             type="button"
             data-bs-target="#courseCarousel"
-            data-bs-slide="next"
+            data-bs-slide="next"            
           >
             <span
-              class="carousel-control-next-icon bg-primary rounded-circle p-3"
+              class="carousel-control-next-icon bg-dark rounded-circle p-3"
               aria-hidden="true"
+              style="height: 40px;
+              width: 40px;"
             ></span>
             <span class="visually-hidden">Next</span>
           </button>
@@ -1579,7 +1584,7 @@
       </div>
     </section>
 
-    <section id="newsletter" class="py-5 bg-dark text-white">
+    <section id="form" class="py-5 bg-dark text-white">
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-lg-8 text-center">
@@ -1618,7 +1623,7 @@
     </div>
   </footer> -->
 
-    <div class="container mt-5">
+    <div class="container mt-5" id="about">
       <!-- Row START -->
       <div class="row g-4">
         <!-- Widget 1 START -->
@@ -1639,6 +1644,7 @@
           <ul class="list-inline mb-0 mt-3">
             <li class="list-inline-item">
               <a
+                target="_blank"
                 class="btn btn-white btn-sm shadow-lg px-2 text-facebook"
                 href="https://web.facebook.com"
                 ><i class="bi bi-facebook text-primary"></i
@@ -1646,6 +1652,7 @@
             </li>
             <li class="list-inline-item">
               <a
+                target="_blank"
                 class="btn btn-white btn-sm shadow-lg px-2 text-instagram"
                 href="#"
                 ><i class="bi bi-instagram text-danger"></i
@@ -1653,6 +1660,7 @@
             </li>
             <li class="list-inline-item">
               <a
+                target="_blank"
                 class="btn btn-white btn-sm shadow-lg px-2 text-twitter"
                 href="mailto:alaminissa200@gmail.com"
                 ><i class="bi bi-bi bi-envelope-fill text-danger"></i
@@ -1660,8 +1668,9 @@
             </li>
             <li class="list-inline-item">
               <a
+                target="_blank"
                 class="btn btn-white btn-sm shadow-lg px-2 text-linkedin"
-                href="https://github.com/alamin-isa/"
+                href="https://github.com"
                 ><i class="bi bi-github text-dark"></i
               ></a>
             </li>

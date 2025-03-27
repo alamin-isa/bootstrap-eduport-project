@@ -60,7 +60,7 @@ form {
   transition: 0.3s ease-in-out;
 }
 .ins-img:hover {
-  box-shadow: 3px 2px 15px rgba(0, 0, 0, 0.4);
+  box-shadow: 4px 3px 25px rgba(0, 0, 0, 0.6);
 }
 
 
